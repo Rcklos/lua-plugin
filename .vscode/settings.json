@@ -1,3 +1,6 @@
 {
+    "Lua.misc.parameters": [
+        "--develop=true"
+    ],
     "Lua.runtime.plugin": ".vscode/plugin.lua"
 }
