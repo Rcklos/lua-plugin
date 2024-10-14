@@ -1,16 +1,10 @@
-function class(name)
-  return setmetatable({}, {
-    __cname = name
-  })
-end
+local _Super = require("super")
 
-local _M = class("MyTestClass")
+local _M = class("MyClass", _Super)
 
 
-_M.log = "hello"
-
-function _M:print()
-  print("hello")
+local function print(self)
+    self:super_print()
 end
 
 return _M
